@@ -38,7 +38,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>1.5.2.RELEASE</version>
                 <configuration>
-                    <mainClass>pl.piomin.microservices.account.Application</mainClass>
+                    <mainClass>com.agilefaqs.spring.microservices.userservice.Application</mainClass>
                     <addResources>true</addResources>
                 </configuration>
                 <executions>

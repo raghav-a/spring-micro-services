@@ -50,7 +50,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>1.5.2.RELEASE</version>
                 <configuration>
-                    <mainClass>pl.piomin.microservices.edge.Application</mainClass>
+                    <mainClass>com.agilefaqs.spring.microservices.gateway.Application</mainClass>
                     <addResources>true</addResources>
                 </configuration>
                 <executions>
