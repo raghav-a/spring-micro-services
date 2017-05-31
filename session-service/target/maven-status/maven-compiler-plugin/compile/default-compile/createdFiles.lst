@@ -1,0 +1,5 @@
+com/agilefaqs/spring/microservices/sessionservice/model/UserProfile.class
+com/agilefaqs/spring/microservices/sessionservice/api/Api.class
+com/agilefaqs/spring/microservices/sessionservice/model/Session.class
+com/agilefaqs/spring/microservices/sessionservice/client/UserServiceClient.class
+com/agilefaqs/spring/microservices/sessionservice/Application.class

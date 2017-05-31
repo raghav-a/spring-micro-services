@@ -1,0 +1,40 @@
+info:
+  component: Gateway Server
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+
+zuul:
+  prefix: /api
+  routes:
+    users:
+      url: https://user-service-micro.cfapps.io
+      path: /user/**
+      serviceId: user-service-micro
+    sessions:
+      url: https://session-service.cfapps.io
+      path: /session/**
+      serviceId: session-service
+
+ribbon:
+  eureka:
+    enabled: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: https://eureka-discovery-service.cfapps.io/eureka
+    registerWithEureka: false
+
+server:
+  port: 8765
+
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.web: DEBUG
