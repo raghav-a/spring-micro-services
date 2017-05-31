@@ -1,0 +1,8 @@
+applications:
+- name: session-service
+  memory: 250M
+  env:
+    JBP_CONFIG_TOMCAT: "{ tomcat: { arguments: {server.tomcat.max-threads=20} } }"
+    JAVA_OPTS: -DXms=150m -DXmx=200m
+    JBP_CONFIG_OPEN_JDK_JRE: "{ memory_calculator: { stack_threads : 20} }"
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git

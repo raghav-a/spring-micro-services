@@ -12,10 +12,12 @@ endpoints:
 zuul:
   prefix: /api
   routes:
-    account:
+    users:
+      url: https://user-service-micro.cfapps.io
       path: /user/**
-      serviceId: user-service
-    customer:
+      serviceId: user-service-micro
+    sessions:
+      url: https://session-service.cfapps.io
       path: /session/**
       serviceId: session-service
 
@@ -26,7 +28,7 @@ ribbon:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: https://eureka-discovery-service.cfapps.io/eureka
     registerWithEureka: false
 
 server:

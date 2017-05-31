@@ -11,7 +11,7 @@ import java.util.List;
 
 
 
-@FeignClient("user-service")
+@FeignClient("user-service-micro")
 public interface UserServiceClient {
 
     @RequestMapping(method = RequestMethod.GET, value = "/users/profile/{email}")

@@ -1,0 +1,8 @@
+applications:
+- name: user-service-micro
+  memory: 250M
+  env:
+    JBP_CONFIG_TOMCAT: "{ tomcat: { arguments: {server.tomcat.max-threads=10} } }"
+    JAVA_OPTS: -DXms=150m -DXmx=200m
+    JBP_CONFIG_OPEN_JDK_JRE: "{ memory_calculator: { class_count: 1000 , stack_threads : 10} }"
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git

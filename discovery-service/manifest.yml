@@ -1,0 +1,8 @@
+applications:
+- name: eureka-discovery-service
+  memory: 500M
+  env:
+    JBP_CONFIG_TOMCAT: "{ tomcat: { arguments: {server.tomcat.max-threads=40} } }"
+    JAVA_OPTS: -DXms=400m -DXmx=400m
+    JBP_CONFIG_OPEN_JDK_JRE: "{ memory_calculator: { class_count: 1000 , stack_threads : 80} }"
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git

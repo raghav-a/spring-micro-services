@@ -1,0 +1,9 @@
+applications:
+- name: gateway-server
+  memory: 600M
+  timeout: 180
+  env:
+    JBP_CONFIG_TOMCAT: "{ tomcat: { arguments: {server.tomcat.max-threads=20} } }"
+    JAVA_OPTS: -DXms=300m -DXmx=600m
+    JBP_CONFIG_OPEN_JDK_JRE: "{ memory_calculator: { class_count: 1000 , stack_threads : 20} }"
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
