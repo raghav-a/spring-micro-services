@@ -1,7 +1,11 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
 gateway/gateway.iml
+gateway/target
 spring-micro-services.iml
 user-service/user-service.iml
+user-service/target
 session-service/session-service.iml
+session-service/target
 discovery-service/discovery-service.iml
+discovery-service/target
