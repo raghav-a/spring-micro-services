@@ -5,3 +5,7 @@ spring-micro-services.iml
 user-service/user-service.iml
 session-service/session-service.iml
 discovery-service/discovery-service.iml
+discovery-service/target/
+gateway/target/
+session-service/target/
+user-service/target/
